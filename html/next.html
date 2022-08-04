@@ -1,0 +1,538 @@
+<html>
+    <title></title>
+    <head>
+                <link rel="stylesheet" href="file:///C:/Users/vishw/OneDrive/Desktop/node%20server/webapp/public/project/CSS/next.css">
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+               <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <div>
+            <img src="file:///C:/Users/vishw/OneDrive/Desktop/node%20server/webapp/public/project/e_picture/logo1.jpg" alt="" width="80px" height="50px" class="logo">
+            <input type="text"  placeholder="What is on your mind today ?" id="inptsearch">
+            <span> <input type="button" value="Search" id="search" onclick="doSearch()"> </span>
+        </div>
+        <div class="container1">
+            <ul class="navside"> 
+                <li id="mobilemore" onmouseover="doMobile(event)">MOBILE & MORE</li>
+                <li onmouseover="doMobile(event)" > MEN</li>
+                <li onmouseover="doMobile(event)"> WOMEN</li>
+                <li onmouseover="doMobile(event)"> HOME & KITCHEN</li>
+                <li onmouseover="doMobile(event)"> APPLICATION</li>
+                <li onmouseover="doMobile(event)"> SPORTS & MORE</li>
+                <li onmouseover="doMobile(event)"> OFFER</li>
+            </ul>
+        </div>
+      <div class="container2">
+          <ul>
+              <li>Time Sale</li>
+              <li>Flucare</li>
+              <li>Food & Beverge</li>
+              <li>Personal Hygine</li>
+              <li>Home cleaning</li>
+              <li>Nutrition & Supplement</li>
+              <li>Kitchen & Dinning</li>
+              <li>Refurbished Mobile</li>
+              <li>Mobile Accessories</li>
+              
+          </ul>
+      </div>
+        <div class="imagecontainer1">
+          <!-- <img src="C:\Users\USER\Desktop\project\e_picture\product1.jpg" alt=""> -->
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="file:///C:/Users/vishw/OneDrive/Desktop/node%20server/webapp/public/project/e_picture/product1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="file:///C:/Users/vishw/OneDrive/Desktop/node%20server/webapp/public/project/e_picture/pro6.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="file:///C:/Users/vishw/OneDrive/Desktop/node%20server/webapp/public/project/e_picture/pro7.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="file:///C:/Users/vishw/OneDrive/Desktop/node%20server/webapp/public/project/e_picture/pro8.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="file:///C:/Users/vishw/OneDrive/Desktop/node%20server/webapp/public/project/e_picture/pro9.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div> 
+
+          <span class="friday"> Friday Blokbuster</span>
+          <span class="friday1"> Prime Mall</span>
+          <span class="friday2"> Womens's Stylish Jewellery</span>
+          <span class="friday3"> Top Rated Products</span>
+          <span class="friday4"> Sports Corner</span>
+
+        </div>
+      <span class="imagecontainer2">
+          <img src="file:///C:/Users/vishw/OneDrive/Desktop/node%20server/webapp/public/project/e_picture/pro2.jpg" class="image1" alt="">
+          <img src="file:///C:/Users/vishw/OneDrive/Desktop/node%20server/webapp/public/project/e_picture/pro3.jpg" class="image2" alt="">
+          <img src="file:///C:/Users/vishw/OneDrive/Desktop/node%20server/webapp/public/project/e_picture/pro4.jpg"  class="image3" alt="">
+      </span>
+
+
+      <h2>Deals of the Day   &#8986  
+        <span id="demo" style="font-size: 15px;"></span>
+      </h2>
+        <div class="product">
+
+              <!----        <span class="prod">
+
+              <li class="slick-slide slick-current slick-active" style="width: 247px;" tabindex="-1" role="option" aria-describedby="slick-slide20" data-slick-index="0" aria-hidden="false">
+              <a target="_blank" id="152689876" href="//bazaar.shopclues.com/venerate-aluminium-headphone-stand-black-152689876.html" om-zone="default" omnirel="D|Home|B22P1|Mobile &amp; La|Mobile &amp;|Holders |152689876|Desktop_strategy_DOD|dodTnT" onclick="hometracking(this)" data-id="dodTnT" tabindex="0">
+              <img data-img="https://cdn.shopclues.com/images1/thumbnails/115246/200/200/152689876-115246212-1631016838.jpg" src="https://cdn.shopclues.com/images1/thumbnails/115246/200/200/152689876-115246212-1631016838.jpg">
+              <h4>Venerate Headphone Stand Headset Holder Earphone Stand with Aluminum Supporting Bar (Black)</h4>
+              <p>₹392<strike>₹1999</strike>
+                <span class="discount_off">80% off</span>
+              </p></a></li>
+          </span>
+
+             <span class="prod">
+               <li class="slick-slide slick-active" style="width: 247px;" data-slick-index="1" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide51">
+               <a target="_blank" id="150349620" href="//bazaar.shopclues.com/mobile-phone-charging-holder-150349620.html" om-zone="default" omnirel="D|Home|B22P2|Mobile &amp; La|Mobile &amp;|Holders |150349620|Desktop_strategy_DOD|dodTnT" onclick="hometracking(this)" data-id="dodTnT" tabindex="0">
+                <img data-img="https://cdn.shopclues.com/images1/thumbnails/108524/200/200/150349620-108524016-1653066814.jpg" src="https://cdn.shopclues.com/images1/thumbnails/108524/200/200/150349620-108524016-1653066814.jpg">
+                <h4>Fit Portable Mobile Phone Wall Charging Holder with universal 3 Pin Plug</h4>
+                <p>₹220<strike>₹399</strike><span class="discount_off">45% off</span></p></a></li>
+              </span>--->
+
+              <div class="li-prod">
+                <a href="blank">
+                  <img src="file:///C:/Users/vishw/OneDrive/Desktop/node%20server/webapp/public/project/e_picture/bottel.jpg" alt="" >
+                  <h4 style="text-align: center;"> Water Bottle</h4>
+                  <p>₹192<strike>₹500</strike>
+                    <span class="discount_off">80% off</span>
+                  </p>
+                </a>
+
+              </div>
+
+              <div class="li-prod1">
+                <a href="blank">
+                  <img src="file:///C:/Users/vishw/OneDrive/Desktop/node%20server/webapp/public/project/e_picture/nutrin & subliment.jpg" alt="" >
+                  <h4 style="text-align: center;"> Nutrin & Subliment</h4>
+                  <p>₹322<strike>₹900</strike>
+                    <span class="discount_off">70% off</span>
+                  </p>
+                </a>
+
+              </div>
+
+              <div class="li-prod2">
+                <a href="blank">
+                  <img src="file:///C:/Users/vishw/OneDrive/Desktop/node%20server/webapp/public/project/e_picture/skipping rops.jpg" alt="" >
+                  <h4 style="text-align: center;"> Skipping ropps</h4>
+                  <p>₹200<strike>₹400</strike>
+                    <span class="discount_off">50% off</span>
+                  </p>
+                </a>
+
+              </div>
+
+              <div class="li-prod3">
+                <a href="blank">
+                  <img src="https://rukminim1.flixcart.com/image/150/150/kvmpq4w0/dress/o/p/l/l-ttj6005834-tokyo-talkies-original-imag8heachhsdpa7.jpeg?q=70" alt="" >
+                  <h4 style="text-align: center;"> Dresses Night Wear </h4> 
+                  <p>₹200<strike>₹400</strike>
+                    <span class="discount_off">50% off</span>
+                  </p>
+                </a>
+
+              </div>
+
+              <div class="li-prod4">
+                <a href="blank">
+                  <img src="https://rukminim1.flixcart.com/image/150/150/kjhgzgw0-0/blanket/c/3/u/single-blankets-kihcoral-s-navy-plain-xxx-kihome-original-imafzfk3dzby6h8m.jpeg?q=70" alt="" >
+                  <h4 style="text-align: center;"> Blankets</h4>
+                  <p>₹200<strike>₹400</strike>
+                    <span class="discount_off">50% off</span>
+                  </p>
+                </a>
+
+              </div>
+              <div class="li-prod5">
+                <a href="blank">
+                  <img src="https://rukminim1.flixcart.com/image/150/150/kwxv98w0/home-cleaning-set/o/0/c/art-no-sz-0086-spotzero-by-milton-original-imag9g8zajm2ffjw.jpeg?q=70" alt="" >
+                  <h4 style="text-align: center;"> Home cleaning Sets</h4>
+                  <p>₹200<strike>₹400</strike>
+                    <span class="discount_off">50% off</span>
+                  </p>
+                </a>
+
+              </div>
+              
+              <div class="li-prod6">
+                <a href="blank">
+                  <img src="https://rukminim1.flixcart.com/image/150/150/jy0frm80/deodorant/g/f/p/400-hamilton-deodorant-body-spray-denver-men-original-imafgb9fsafampwz.jpeg?q=70" alt="" >
+                  <h4 style="text-align: center;"> Deodorants</h4>
+                  <p>₹200<strike>₹400</strike>
+                    <span class="discount_off">50% off</span>
+                  </p>
+                </a>
+
+              </div>
+
+
+        </div> 
+
+        <h2 style="position: realative; top:-90px"> Daily Essentials
+          &#8986  
+          <span id="demo1" style="font-size: 15px;"></span>
+        </h2>
+      
+        <div class="product1">
+
+            
+              <div class="li-prod">
+                <a href="blank">
+                  <img src="https://rukminim1.flixcart.com/image/150/150/koynr0w0/umbrella/l/t/5/21-leatrix-21-inch-2-fold-auto-open-eume-original-imag3avryrbwgmzz.jpeg?q=70" alt="">
+                  <h4 style="text-align: center;"> Regualar Umbrellas</h4>
+                  <p>₹192<strike>₹500</strike>
+                    <span class="discount_off">80% off</span>
+                  </p>
+                </a>
+
+              </div>
+
+              <div class="li-prod1">
+                <a href="blank">
+                  <img src="https://rukminim1.flixcart.com/image/150/150/kqttg280/necklace-chain/t/m/a/heartbeat-chain-brado-jewellery-original-imag4qwqsnnq92hh.jpeg?q=70" alt="">
+                  <h4 style="text-align: center;">Jwellary Sets</h4>
+                  <p>₹322<strike>₹900</strike>
+                    <span class="discount_off">70% off</span>
+                  </p>
+                </a>
+
+              </div>
+
+              <div class="li-prod2">
+                <a href="blank">
+                  <img src="https://rukminim1.flixcart.com/image/150/150/ktuewsw0/hair-oil/q/2/4/brahmi-amla-ayurvedic-bajaj-original-imag73fvpywyyzeu.jpeg?q=70" alt="" >
+                  <h4 style="text-align: center;">Hair Oil</h4>
+                  <p>₹200<strike>₹400</strike>
+                    <span class="discount_off">50% off</span>
+                  </p>
+                </a>
+
+              </div>
+
+              <div class="li-prod3">
+                <a href="blank">
+                  <img src="https://rukminim1.flixcart.com/image/150/150/kqse07k0/wallpaper/z/q/y/243-40-guru-3d-wall-tex-94-guru-production-original-imag4qynhdfnzr6u.jpeg?q=70" alt="" >
+                  <h4 style="text-align: center;"> Stylish Home Decorate</h4>
+                  <p>₹200<strike>₹400</strike>
+                    <span class="discount_off">50% off</span>
+                  </p>
+                </a>
+
+              </div>
+
+              <div class="li-prod4">
+                <a href="blank">
+                  <img src="https://rukminim1.flixcart.com/image/150/150/krp94sw0/rakhi-set/n/6/s/5-rajan-s4-120-pdr-poonam-designer-rakhi-original-imag5fg5qzwzs5nw.jpeg?q=70" alt="" >
+                  <h4 style="text-align: center;">Rakhi and Rakhi sets</h4>
+                  <p>₹200<strike>₹400</strike>
+                    <span class="discount_off">50% off</span>
+                  </p>
+                </a>
+
+              </div>
+              <div class="li-prod5">
+                <a href="blank">
+                  <img src="https://rukminim1.flixcart.com/image/150/150/l1xwqkw0/watch/q/b/e/1-1729sl06-titan-men-original-imagde9grrchs5zz.jpeg?q=70" alt="" >
+                  <h4 style="text-align: center;">Tite ,Fastrak watch</h4>
+                  <p>₹200<strike>₹400</strike>
+                    <span class="discount_off">50% off</span>
+                  </p>
+                </a>
+
+              </div>
+              
+              <div class="li-prod6">
+                <a href="blank">
+                  <img src="https://rukminim1.flixcart.com/image/150/150/l3bx5e80/shoe/t/v/q/9-belly-240-42-shoetopia-maroon-original-imageh4zexhkcytz.jpeg?q=70" alt="" >
+                  <h4 style="text-align: center;"> Bata Shoetopia</h4>
+                  <p>₹200<strike>₹400</strike>
+                    <span class="discount_off">50% off</span>
+                  </p>
+                </a>
+
+              </div>
+
+
+        </div> 
+
+
+
+        <h2 style="position: realative; top:-90px"> Daily Essentials</h2>
+        <div class="product1">
+
+            
+              <div class="li-prod">
+                <a href="blank">
+                  <img src="https://rukminim1.flixcart.com/image/150/150/kupuljk0/curtain/s/o/m/jester-210-0034cr-0003-door-ring-rod-raymond-home-original-imag7rznxhhg2bug.jpeg?q=70" alt="">
+                  <h4 style="text-align: center;"> Home Furshining Range</h4>
+                  <p>₹192<strike>₹500</strike>
+                    <span class="discount_off">80% off</span>
+                  </p>
+                </a>
+
+              </div>
+
+              <div class="li-prod1">
+                <a href="blank">
+                  <img src="https://rukminim1.flixcart.com/image/150/150/kn4xhu80/power-bank/w/0/f/power-bank-dx17-10000-mah-10000-dx17-callmate-original-imagfvm28gyaxhza.jpeg?q=70" alt="">
+                  <h4 style="text-align: center;">Never Before Deals</h4>
+                  <p>₹322<strike>₹900</strike>
+                    <span class="discount_off">70% off</span>
+                  </p>
+                </a>
+
+              </div>
+
+              <div class="li-prod2">
+                <a href="blank">
+                  <img src="https://rukminim1.flixcart.com/image/150/150/kubk70w0/accessories-combo/z/g/d/beteiuy-yrjs3-sun-shopping-original-imag7gwqncvtzxmn.jpeg?q=70" alt="" >
+                  <h4 style="text-align: center;">Wallets and Belts</h4>
+                  <p>₹200<strike>₹400</strike>
+                    <span class="discount_off">50% off</span>
+                  </p>
+                </a>
+
+              </div>
+
+              <div class="li-prod3">
+                <a href="blank">
+                  <img src="https://rukminim1.flixcart.com/image/150/150/ktbu6q80/carabiner/b/9/p/metal-avengers-superhero-captain-america-shield-1-avi-original-imag6pakyws99dma.jpeg?q=70" alt="" >
+                  <h4 style="text-align: center;"> Stationary Supplies</h4>
+                  <p>₹200<strike>₹400</strike>
+                    <span class="discount_off">50% off</span>
+                  </p>
+                </a>
+
+              </div>
+
+              <div class="li-prod4">
+                <a href="blank">
+                  <img src="https://rukminim1.flixcart.com/image/150/150/kyvvtzk0/remote-control-toy/a/w/5/four-wheel-drive1-16-metal-alloy-body-remote-control-rock-original-imagbysucvazbynz.jpeg?q=70" alt="" >
+                  <h4 style="text-align: center;">Best Deals On Toys</h4>
+                  <p>₹200<strike>₹400</strike>
+                    <span class="discount_off">50% off</span>
+                  </p>
+                </a>
+
+              </div>
+              <div class="li-prod5">
+                <a href="blank">
+                  <img src="https://rukminim1.flixcart.com/image/150/150/kqttg280/hair-dryer/l/u/j/hkd1650-hairkraft-original-imag4r7cf5bhkf67.jpeg?q=70" alt="" >
+                  <h4 style="text-align: center;">Hair Dryer</h4>
+                  <p>₹200<strike>₹400</strike>
+                    <span class="discount_off">50% off</span>
+                  </p>
+                </a>
+
+              </div>
+              
+              <div class="li-prod6">
+                <a href="blank">
+                  <img src="https://rukminim1.flixcart.com/flap/200/200/image/d5556df6b84e2e08.jpg?q=70" alt="" >
+                  <h4 style="text-align: center;">Best Deals Lofer</h4>
+                  <p>₹200<strike>₹400</strike>
+                    <span class="discount_off">50% off</span>
+                  </p>
+                </a>
+
+              </div>
+
+
+        </div> 
+        <h2 style="position: realative; top:-90px"> Daily Essentials</h2>
+        <div class="product1">
+
+            
+              <div class="li-prod">
+                <a href="blank">
+                  <img src="https://rukminim1.flixcart.com/image/200/200/kupuljk0/curtain/s/o/m/jester-210-0034cr-0003-door-ring-rod-raymond-home-original-imag7rznxhhg2bug.jpeg?q=70" alt="">
+                  <h4 style="text-align: center;"> Home Decorate</h4>
+                  <p>₹192<strike>₹500</strike>
+                    <span class="discount_off">80% off</span>
+                  </p>
+                </a>
+
+              </div>
+
+              <div class="li-prod1">
+                <a href="blank">
+                  <img src=" https://rukminim1.flixcart.com/flap/200/200/image/6c8d75ec8d517914.jpg?q=70" alt="">
+                  <h4 style="text-align: center;">Kids Dress</h4>
+                  <p>₹322<strike>₹900</strike>
+                    <span class="discount_off">70% off</span>
+                  </p>
+                </a>
+
+              </div>
+
+              <div class="li-prod2">
+                <a href="blank">
+                  <img src="  https://rukminim1.flixcart.com/image/200/200/kusph8w0/screen-guard/edge-to-edge-tempered-glass/w/f/h/tb-j606f-j706l-techshield-original-imag7uyjfcqa7hya.jpeg?q=70 " alt="" >
+                  <h4 style="text-align: center;">Tablet Accessories</h4>
+                  <p>₹200<strike>₹400</strike>
+                    <span class="discount_off">50% off</span>
+                  </p>
+                </a>
+
+              </div>
+
+              <div class="li-prod3">
+                <a href="blank">
+                  <img src="https://rukminim1.flixcart.com/image/200/200/l02r1jk0/sari/x/k/1/free-2314s160n-magmina-unstitched-original-imagbxtysbqenfgq.jpeg?q=70" alt="" >
+                  <h4 style="text-align: center;"> Lehira Saree</h4>
+                  <p>₹200<strike>₹400</strike>
+                    <span class="discount_off">50% off</span>
+                  </p>
+                </a>
+
+              </div>
+
+              <div class="li-prod4">
+                <a href="blank">
+                  <img src="https://rukminim1.flixcart.com/image/612/612/l0fm07k0/showpiece-figurine/q/t/s/9-10-adiyogi-sbbco-9-original-imagc892vrsg2sdd.jpeg?q=70" alt="" >
+                  <h4 style="text-align: center;">Addiyogi</h4>
+                  <p>₹200<strike>₹400</strike>
+                    <span class="discount_off">50% off</span>
+                  </p>
+                </a>
+
+              </div>
+              <div class="li-prod5">
+                <a href="blank">
+                  <img src="https://rukminim1.flixcart.com/image/312/312/l3lx8cw0/computer/s/t/b/pt516-52s-gaming-laptop-acer-original-imagep4hxjafezxf.jpeg?q=70" alt="" >
+                  <h4 style="text-align: center;">acer Predator Triton 500 SE Core i7 12th Gen - (32 GB/2 TB SSD/Windows 11 Home/8 GB Graphics/NVIDIA GeForce RTX 3070 Ti) PT516-52s Gaming Laptop  (16 Inch, Steel Grey, 2.4 KG, With MS Office)</h4>
+                  <p>₹229990<strike>249999</strike>
+                    <span class="discount_off">50% off</span>
+                  </p>
+                </a>
+
+              </div>
+              
+              <div class="li-prod6">
+                <a href="blank">
+                  <img src="https://rukminim1.flixcart.com/image/580/696/kljrvrk0/shirt/b/9/x/xl-h1-finivo-fashion-original-imagyn8d3yadz5sb.jpeg?q=50 " alt="" >
+                  <h4 style="text-align: center;">Men Regular Fit Striped Spread Collar Casual Shirt</h4>
+                  <p>₹474<strike>₹1399</strike>
+                    <span class="discount_off">50% off</span>
+                  </p>
+                </a>
+
+              </div>
+
+
+        </div> 
+
+
+
+
+        <!-- <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+
+
+
+              <img src="..." class="d-block w-100" alt="...">
+
+
+
+
+            </div>
+            <div class="carousel-item">
+              <img src="..." class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+
+
+              
+              <img src="..." class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div> -->
+
+
+<!--------footer----------->
+
+
+
+        <div class="footer" >
+          <div class="container">
+            <div class="row">
+              <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and ios mobile phone.</p>
+                <div class="app logo">
+                  <img src="file:///C:/Users/vishw/OneDrive/Desktop/node%20server/webapp/public/project/e_picture/playstore.png" width="90px hight=90px">
+                  <img src="file:///C:/Users/vishw/OneDrive/Desktop/node%20server/webapp/public/project/e_picture/appstore.png" width="90px hight=90px">
+                </div>
+              </div>
+              <div class="footer-col-2">
+               
+                <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits Of Sports Accessible to the Many.</p>
+              </div>
+              <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                  <li>Cupons</li>
+                  <li>Blog Post</li>
+                  <li>Return Policy</li>
+                  <li>Join Affiliate</li>
+                </ul>
+              </div>
+              <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                  <li>Facebook</li>
+                  <li>Twitter</li>
+                  <li>(@vishwas36116824)</li>
+                  <li>Instaram</li>
+                  <li>(@vishwas.thakur_0001)</li>
+                  <li>You Tube (All is one)</li>
+                  
+                </ul>
+              </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2022-Vishwas Singh</p>
+          </div>
+        </div>
+        
+
+
+
+       
+
+        <script src="file:///C:/Users/vishw/OneDrive/Desktop/node%20server/webapp/public/project/JAVASCRIPT/next.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Gugi&family=Lato:wght@100&family=Poppins:wght@400;500;600&family=Roboto:wght@100&display=swap');
+
+:root{
+    --light-gray:#2b3032a1;
+    --primary-color:#e5df45;
+}
+
+h1{
+    color: #ffff;
+}
+p{
+    color: #e5df45
+    ;
+}

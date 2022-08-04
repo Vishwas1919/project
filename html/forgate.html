@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>forgate page</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+		integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style type="text/css">
+	body{
+		position: absolute;
+	margin: 0;
+	padding: 0;
+	background: url("e_picture/first_picture.jpg") no-repeat;
+	background-size:cover;
+	width:60%;
+	height: 100%;
+	background: radial-gradient(#ffd6d6);
+}
+
+.container {
+	width: 400px;
+	height: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	position: relative;
+	left: 1000px;
+}
+.screen {		
+	background: linear-gradient(120deg, #3ef4A4, #4f78B8);		
+	position: relative;	
+	height: 422px;
+	width: 360px;	
+	box-shadow: 5px 20px 24px #5C5696;
+	border-radius: 28px;
+	}
+	.login {
+	width: 320px;
+	padding: 30px;
+	padding-top: 100px;
+}
+.login__field {
+	padding: 20px 0px;	
+	position: relative;	
+}
+.login__input {
+	border: none;
+	border-bottom: 2px solid #D1D1D4;
+	background: none;
+	padding: 10px;
+	padding-left: 24px;
+	font-weight: 700;
+	width: 75%;
+	transition: .2s;
+	outline: none;
+}
+.reset{
+	position: relative;
+	left: 100px;
+	top: 40px;
+	font-size: 25px;
+	font-family: Raleway, sans-serif;
+	font-weight: bold;
+	color: #fff;
+}
+.gen{
+	position: relative;
+	font-family: Raleway, sans-serif;
+	font-weight: bold;
+	top: 30px;
+	left: 110px;
+	color:#fff;
+	transition: .2s;
+}
+.login__icon {
+	position: relative;
+	left: 15px;
+	color: #7875B5;
+	}
+
+
+
+
+
+
+
+
+
+
+</style>
+
+<body>
+	<div class="container">
+		<div class="screen">
+			<div class="reset">Reset Password</div>
+			<form class="login">
+			<div class="login__field>"><i class="login__icon fas fa-user"></i><input type="email" class="login__input" placeholder="enter your email or phone"></div>
+			<div class="login__field"><i class="login__icon fas fa-lock"></i><input type="Password" class="login__input" placeholder="password"></div>
+			<div class="login__field"><i class="login__icon fas fa-lock"></i><input type="Password" class="login__input" placeholder=" cnf password"></div>
+			<div class="gen"><a href="file:///C:/Users/USER/Documents/project/login_page.html?#"> Generate Password</a></div>
+			</form>
+		</div>
+	</div>
+
+</body>
+</html>

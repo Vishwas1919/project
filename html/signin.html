@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="file:///C:/Users/vishw/OneDrive/Desktop/node%20server/webapp/public/project/CSS/signin.css">
+  
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="modelform">
+            <div class="actionBtns">
+               <button class="actionBtn signupBtn">SignUp</button>
+               <button class="actionBtn loginBtn">Login</button>
+               <button class="moveBtn ">SignUp</button>
+            </div>
+            <div class="userForm">
+                <form action="" class="form signup signupForm " onsubmit="return myfun()">
+                    <div class="inputGroup">
+                        <input type="text" placeholder="First name" autocomplete="off" id="fuser">
+                    </div>
+                    <div id="usererror1" class="error"></div>
+
+
+                    <div class="inputGroup">
+                        <input type="text" placeholder="Last name" autocomplete="off" id="luser">
+                    </div>
+                    <div id="usererror2" class="error"></div>
+
+
+                    <div class="inputGroup">
+                        <input type="password" placeholder=" new password" autocomplete="off" id="pass1">
+                    </div>
+                    <div id="usererror3" class="error"></div>
+
+
+                    <div class="inputGroup">
+                        <input type="password" placeholder="confirm password" autocomplete="off" id="pass2">
+                    </div>
+                    <div id="usererror4" class="error"></div>
+
+
+                    <div>
+                        <button type="submit" class="submitBtn" >SignUp</button>
+                    </div>
+
+                </form>
+                <form action="" class="form login">
+                    <div class="inputGroup">
+                        <input type="text" placeholder="Email or phone" autocomplete="off">
+                    </div>
+
+                    <div class="inputGroup">
+                        <input type="password" placeholder=" password" autocomplete="off">
+                    </div>
+                      <p> <a href="">forgate password</a></p>
+                    <div>
+                       <button type="submit" class="submitBtn"> <a href="file:///D:/project/next.html">Login</a></button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+   <script>
+    const signupBtn=document.querySelector(".signupBtn");
+    const loginBtn=document.querySelector(".loginBtn");
+    const moveBtn=document.querySelector(".moveBtn");
+    const signup=document.querySelector(".signup");
+    const login=document.querySelector(".login");
+
+    loginBtn.addEventListener("click",()=>{
+        moveBtn.classList.add("rightBtn");
+        login.classList.add("loginForm");
+        signup.classList.remove("signupForm");
+        moveBtn.innerHTML="login";
+    })
+
+    signupBtn.addEventListener("click",()=>{
+        moveBtn.classList.remove("rightBtn");
+
+        login.classList.remove("loginForm");
+        signup.classList.add("signupForm");
+        moveBtn.innerHTML="signup";
+    })
+
+
+
+    myfun=function(){
+    
+    //var correct_way=/^[A-Z]+$/;
+
+     var symbol=/^[\@\#\$\&\%]+$/;
+        
+     var fuser =document.getElementById("fuser").value ;
+
+     if(fuser==""){
+                document.getElementById("usererror1").innerHTML="Please mandetory fill*"
+                return false;
+            }
+     var luser  =document.getElementById("luser").value;     
+            if(luser==""){
+                document.getElementById("usererror2").innerHTML="Please mandetory fill*"
+                return false;
+            }  
+            
+            
+            var pass1 = document.getElementById("pass1").value;
+
+            if(pass1==""){
+                 document.getElementById("usererror3").innerHTML="* Please fill password * "
+                 return false;
+             }
+             if (pass1.length<8){
+                document.getElementById("usererror3").innerHTML="* Password must be 8 char!* "
+                 return false;
+             }
+
+            if(pass1.search(correct_way)){
+                document.getElementById("usererror3").innerHTML="*Password sholud atleast contain one Uppercase char!* "
+                 return false;
+                 
+            }
+                
+             if(pass1.charAt(0)!= 0 && pass1.charAt(0)!= 1 && pass1.charAt(0)!= 2 && pass1.charAt(0)!= 3 && pass1.charAt(0)!= 4 && pass1.charAt(0)!=5 && pass1.charAt(0)!= 6 && pass1.charAt(0)!=7 && pass1.charAt(0)!= 8 && pass1.charAt(0)!= 9){
+                document.getElementById("usererror3").innerHTML="*Password should be start with number!* "
+                 return false;
+ 
+             }
+             if(pass1.search(/[\@\#\$\&\%]/)){
+                document.getElementById("usererror3").innerHTML="*Password should atleast contain one spaical symbol(#,$,%,@)!* "
+                 return false;
+             }
+
+          var pass2=document.getElementById("pass2").value;
+      
+          if(pass2==""){
+            document.getElementById("usererror4").innerHTML="confirm Password is mandetory*"
+            return false;
+          }
+          
+             
+          if(pass2!=pass1){
+            document.getElementById("usererror4").innerHTML="Password should not be match*"
+            return false;
+          }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   </script>
+</body>
+</html>
